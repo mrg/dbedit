@@ -1,0 +1,33 @@
+<menubar>
+  <menu id="fileMenu" text="File">
+    <menuitem action="about" visible="false" macos_about="true"/>
+    <menuitem text="Preferences..." action="preferences" accelerator="meta ," visible="false" macos_preferences="true"/>
+  
+    <menuitem text="Open..." action="open" accelerator="meta O" mnemonic="VK_O"/>
+    <menu text="Open Recent">
+      <menuitem text="(None)" enabled="false"/>
+    </menu>
+
+    <separator/>
+
+    <menuitem text="Close Window" action="close" accelerator="meta W"/>
+    <menuitem text="Save" action="save" accelerator="meta S" mnemonic="VK_S"/>
+    <menuitem text="Save As..." action="saveAs" accelerator="meta shift S" mnemonic="VK_S"/>
+    <menuitem text="Export..."/>
+    <separator/>
+    <menuitem text="Quit" action="quit" accelerator="meta Q" mnemonic="VK_Q" macos_quit="true"/>
+  </menu>
+
+  <menu id="editMenu" text="Edit">
+    <menuitem text="Cut" action="cut" accelerator="meta X"/>
+    <menuitem text="Copy" action="copy" accelerator="meta C"/>
+    <menuitem text="Paste" action="paste" accelerator="meta V"/>
+  </menu>
+
+  <menu id="windowMenu" text="Window">
+    
+  </menu>
+
+  <menu id="helpMenu" text="Help">
+  </menu>
+</menubar>

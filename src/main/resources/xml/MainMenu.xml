@@ -1,0 +1,11 @@
+<menubar>
+  <menu text="File">
+    <menuitem text="Open..." accelerator="control O" action="open" mnemonic="VK_O"/>
+    <menuitem text="Open Recent"/>
+    <separator/>
+    <menuitem text="Close"/>
+    <menuitem text="Save"/>
+    <menuitem text="Save As..."/>
+    <menuitem text="Export..."/>
+  </menu>
+</menubar>

@@ -1,0 +1,28 @@
+<frame resizable="true" size="640,480" title="About DBEdit">
+  <panel layout="GridLayout(1,1)" doubleBuffered="true">
+
+    <scrollPane>
+      <editorPane contentType="text/html" editable="false">
+        <![CDATA[
+<html>
+This is the <b>about</b> box.
+
+<div align="center">
+  <img src="src/img/DBEdit.png"/>
+</div> 
+
+<br>
+
+Some kinds of content may provide hyperlink support by generating hyperlink events. The HTML EditorKit will generate hyperlink events if the JEditorPane is not editable (JEditorPane.setEditable(false); has been called). If HTML frames are embedded in the document, the typical response would be to change a portion of the current document. The following code fragment is a possible hyperlink listener implementation, that treats HTML frame events specially, and simply displays any other activated hyperlinks.
+
+<br>
+
+<div>
+This product includes software developed by the SWIXML Project (http://www.swixml.org/).
+</div>
+</html>
+        ]]>
+      </editorPane>
+    </scrollPane>
+  </panel>
+</frame>

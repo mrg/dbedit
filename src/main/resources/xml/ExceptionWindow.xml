@@ -1,0 +1,62 @@
+<frame resizable="true" size="640,280" title="Exception Report">
+  <panel layout="GridBagLayout" doubleBuffered="true">
+    <scrollPane >
+      <gridbagconstraints anchor="GridBagConstraints.NORTHWEST" insets="10,10,10,10"
+                  gridwidth="GridBagConstraints.REMAINDER" fill="GridBagConstraints.BOTH" gridx="0" gridy="0" weightx="1" weighty="1"/>
+      <textArea id="textArea" editable="false" font="Courier-12" lineWrap="true" />
+    </scrollPane>
+
+      <button text="OK">
+        <gridbagconstraints anchor="GridBagConstraints.EAST" insets="0,10,10,10" fill="GridBagConstraints.NONE" gridx="0" gridy="1" weightx="0" weighty="0"/>
+      </button>
+  </panel>
+</frame>
+
+<!--
+lineWrap="true" wrapStyleWord="true" 
+
+    <hbox border="TitledBorder(A Titled Border)">
+    </hbox>
+
+    <panel layout="BorderLayout">        
+        <hbox constraints="BorderLayout.NORTH">
+            <vbox>
+                <label text="To :"/>
+                <label text="Subject :"/>
+            </vbox>
+            <vbox>
+                <textfield Text="joshua.marinacci@sun.com"/>
+                <textfield text="SwiXml is really cool!"/>        
+            </vbox>
+        </hbox>
+        
+        <scrollpane constraints="BorderLayout.CENTER">
+            <textarea>
+            </textarea>
+        </scrollpane>
+    </panel>
+
+
+<frame resizable="true" size="640,280" title="Exception Report">
+  <panel layout="GridLayout(2,1)" border="BorderFactory(10,10,10,10)" doubleBuffered="true">
+    <scrollPane>
+      <textArea id="textArea" editable="false" font="Courier-12" lineWrap="true" wrapStyleWord="true" />
+    </scrollPane>
+      <hbox border="TitledBorder(A Titled Border)">
+        <glue/>
+        <button text="4"/>
+      </hbox>
+  </panel>
+</frame>
+
+
+
+
+<gridbagconstraints anchor="NORTHWEST" fill="BOTH" gridwidth="REMAINDER" gridx="0" gridy="0" weightx="1" weighty="1"/>
+
+
+    <layout type="FormLayout"
+            columns="8dlu, p:grow, 8dlu"
+            rows="8dlu, p:grow, 8dlu" />
+
+-->

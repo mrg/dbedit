@@ -1,0 +1,111 @@
+<frame resizable="true" size="640,600" title="Main Window">
+  <panel layout="GridBagLayout" doubleBuffered="true">
+    <panel layout="GridLayout(1,1)" border="TitledBorder( Model )">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_START"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridx="0" gridy="0"
+                          insets="0,10,0,10"
+                          weightx="0" weighty="0"/>
+      <combobox action="modelChanged" enabled="true" initclass="com.rubicode.dbedit.ModelPulldown"/>
+    </panel>
+
+    <panel layout="GridLayout(1,1)" border="TitledBorder( Entity )">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_START"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridx="0" gridy="1"
+                          insets="0,10,0,10"
+                          weightx="0" weighty="0"/>
+      <combobox enabled="false" initclass="com.rubicode.dbedit.ModelPulldown"/>
+    </panel>
+
+    <panel layout="GridLayout(1,1)" border="TitledBorder(  Entity Attributes )">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_START"
+                          fill="GridBagConstraints.BOTH"
+                          gridheight="GridBagConstraints.REMAINDER"
+                          gridx="0" gridy="2"
+                          insets="0,10,10,10"
+                          weightx="0" weighty="1"/>
+      <scrollPane>
+        <tree id="tree" />
+      </scrollPane>
+    </panel>
+
+    <label HorizontalAlignment="RIGHT" icon="img/DBEdit64.png">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_END"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridwidth="GridBagConstraints.REMAINDER"
+                          gridx="1" gridy="0"
+                          insets="10,10,0,10"
+                          weightx="0" weighty="0"/>
+    </label>
+
+    <label HorizontalAlignment="RIGHT" font="Ariel-Bold-24" text="DBEdit/Cayenne">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_END"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridwidth="GridBagConstraints.REMAINDER"
+                          gridx="1" gridy="1"
+                          insets="0,10,0,10"
+                          weightx="0" weighty="0"/>
+    </label>
+
+    <panel layout="GridLayout(1,1)" border="TitledBorder(  Qualifier Expression )" constraints="4,6,1,1,fill,fill">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_END"
+                          fill="GridBagConstraints.BOTH"
+                          gridwidth="GridBagConstraints.REMAINDER"
+                          gridx="1" gridy="2"
+                          insets="0,10,0,10"
+                          weightx="1" weighty="1"/>
+      <scrollPane>
+        <textarea  lineWrap="true"/>
+      </scrollPane>
+    </panel>
+
+    <panel layout="GridLayout(4,3)" border="TitledBorder( Operations )" constraints="4,8,1,1">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_END"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridwidth="GridBagConstraints.REMAINDER"
+                          gridx="1" gridy="3"
+                          insets="0,10,0,10"
+                          weightx="0" weighty="0"/>
+      <button text="="/>
+      <button text="&lt;"/>
+      <button text="&gt;"/>
+
+      <button text="!="/>
+      <button text="&lt;="/>
+      <button text="&gt;="/>
+
+      <button text="and"/>
+      <button text="like"/>
+      <button text="in"/>
+
+      <button text="or"/>
+      <button text="not like"/>
+      <button text="not in"/>
+    </panel>
+
+    <panel layout="GridLayout(1,1)" border="TitledBorder( Fetch Limit )" constraints="4,10,1,1">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_END"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridwidth="GridBagConstraints.REMAINDER"
+                          gridx="1" gridy="4"
+                          insets="0,10,0,10"
+                          weightx="0" weighty="0"/>
+      <combobox enabled="true" initclass="com.rubicode.dbedit.FetchLimitPulldown"/>
+    </panel>
+
+    <panel layout="GridLayout(1,3)" border="TitledBorder( Actions )" constraints="4,12,1,1,fill,center">
+      <gridbagconstraints anchor="GridBagConstraints.LINE_END"
+                          fill="GridBagConstraints.HORIZONTAL"
+                          gridwidth="GridBagConstraints.REMAINDER"
+                          gridx="1" gridy="5"
+                          insets="0,10,10,10"
+                          weightx="0" weighty="0"/>
+      <button icon="img/back.png" toolTipText="Previous Query In History"/>
+      <button icon="img/next.png" toolTipText="Next Query In History"/>
+      <button icon="img/delete.png" toolTipText="Clear Current Qualifier Expression"/>
+      <glue/>
+      <button icon="img/search.png" toolTipText="Perform Search"/>
+    </panel>
+  </panel>
+</frame>
