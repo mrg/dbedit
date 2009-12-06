@@ -1,7 +1,5 @@
 package com.rubicode.dbedit.windows;
 
-import java.awt.event.ComponentEvent;
-import java.awt.event.WindowEvent;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
@@ -61,7 +59,7 @@ public class MainWindow extends WindowController
     }
 
     @Override
-    public void windowResized(ComponentEvent event)
+    public void windowResized()
     {
         try
         {
@@ -90,7 +88,7 @@ public class MainWindow extends WindowController
      * Invoked when the window's position changes.
      */
     @Override
-    public void windowMoved(ComponentEvent event)
+    public void windowMoved()
     {
         try
         {
@@ -111,7 +109,7 @@ public class MainWindow extends WindowController
     }
 
     @Override
-    public void windowClosing(WindowEvent e)
+    public void windowClosing()
     {
         log.debug("Window closing");
 

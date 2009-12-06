@@ -105,7 +105,7 @@ public abstract class WindowController extends WindowEvents
     /////////////////////////////////////////////////////////////////////////
 
     @Override
-    public void windowClosing(WindowEvent event)
+    public void windowClosing()
     {
         log.debug("Window closing");
 
@@ -130,14 +130,14 @@ public abstract class WindowController extends WindowEvents
     }
 
     @Override
-    public void windowClosed(WindowEvent event)
+    public void windowClosed()
     {
         log.debug("Window closed");
 //        window.dispose();
     }
 
     @Override
-    public void windowActivated(WindowEvent event)
+    public void windowActivated()
     {
         log.debug("Window activated");
 //        System.out.println("windowMenu = " + windowMenu);
@@ -155,10 +155,9 @@ public abstract class WindowController extends WindowEvents
     }
 
     @Override
-    public void windowGainedFocus(WindowEvent event)
+    public void windowGainedFocus()
     {
         log.debug("Window gained focus");
-        log.debug(event);
     }
 
     /////////////////////////////////////////////////////////////////////////
